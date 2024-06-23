@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#game {
+  display: inline-block;
+  text-align: left;
+}
+
+#join, #play {
+  margin: 20px;
+}
+
+#word, #role {
+  margin: 10px;
+}
+
+button {
+  margin: 5px;
+}
