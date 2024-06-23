@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Imposters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <div id="join">
+      <input type="text" id="name" placeholder="Enter your name">
+      <button onclick="joinGame()">Join Game</button>
+      <div id="players"></div>
+    </div>
+    <div id="play" style="display: none;">
+      <div id="role"></div>
+      <div id="word"></div>
+      <button onclick="vote('skip')">Skip Vote</button>
+      <button onclick="vote('imposter')">Vote Imposter</button>
+      <div id="points"></div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
